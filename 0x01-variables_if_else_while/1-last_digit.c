@@ -1,6 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
-#include<std>
+#include<stdio.h>
 /**
  * main - Entry point
  *Description: print the value of n status
