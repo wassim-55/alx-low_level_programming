@@ -10,7 +10,7 @@ int main(void)
 
 	while (digit <= 102)
 	{
-		if (digit <= 57 || digit >= 96)
+		if (digit <= 57 || digit > 96)
 			putchar(digit);
 		digit++;
 	}
