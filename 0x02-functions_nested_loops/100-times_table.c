@@ -24,7 +24,17 @@ void print_times_table(int n)
 
 				k = i * j;
 
-				_putchar(k);
+				if (prod <= 9)
+					_putchar(' ');
+				if (prod <= 99)
+					_putchar(' ');
+				if (prod >= 100)
+				{
+					_putchar((prod / 100) + 48);
+					_putchar((prod / 10) % 10 + 48);
+				} else if (k <= 99 && k >= 10)
+					_putchar((k / 10) + 48);
+				_putchar((k % 10) + 48);
 			}
 			_putchar('\n');
 		}
