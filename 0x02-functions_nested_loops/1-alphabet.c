@@ -1,8 +1,8 @@
 #include"main.h"
 /**
- * main - check the code
  *
- * Return: Always 0.
+ *print_alphabet -print the alphabet a - z
+ *
  */
 void print_alphabet(void)
 {
