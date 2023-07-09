@@ -44,8 +44,6 @@ int _atoi(char *s)
 		return (0);
 	return (n);
 }
-#include <stdio.h>
-#include "main.h"
 /**
  * main - Entry point
  *@argc: int
