@@ -29,12 +29,12 @@ int count_word(char *s)
 	return (w);
 }
 /**
- *strlow - returns a pointer to an array of strings (words)
+ *strtow - returns a pointer to an array of strings (words)
  *@str: string
  *Return: pointer to char
  *
 */
-char **strlow(char *str)
+char **strtow(char *str)
 {
 	char **m, *tmp;
 	int i, k = 0, len = 0, words, c = 0, start, end;
