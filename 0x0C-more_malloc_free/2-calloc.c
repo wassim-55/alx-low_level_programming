@@ -1,7 +1,7 @@
 #include "main.h"
 #include <stdlib.h>
 /**
- * _memset - fills memory with a constant byte
+ * *_memset - fills memory with a constant byte
  *@s: pointer
  *@b: constant
  *@n: max bytes to use
@@ -9,11 +9,11 @@
 */
 char *_memset(char *s, char b, unsigned int n)
 {
-	char *ptr = s;
+	unsigned int i;
 
-	while (n--)
-		*s++ = b;
-	return (ptr);
+	for (i = 0; i < n; i++)
+		s[i] = b;
+	return (s);
 }
 
 /**
