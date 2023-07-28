@@ -6,18 +6,18 @@
 
 /**
 * list_len - check the code for ALX School students.
-* @head: name of the list
+* @h: name of the list
 * Return: the number of nodes.
 */
-size_t list_len(const list_t *head)
+size_t list_len(const list_t *h)
 {
    int counter = 0;
 
 
-   while (head)
+   while (h != NULL)
    {
        counter++;
-       head = head->next;
+       h = h->next;
    }
    return (counter);
 }
