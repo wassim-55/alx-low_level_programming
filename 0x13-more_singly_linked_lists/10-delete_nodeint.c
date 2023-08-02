@@ -11,30 +11,30 @@ include "lists.h"
 */
 int delete_nodeint_at_index(listint_t **head, unsigned int index)
 {
-	listint_t *node, *prev_node;
+	listint_t *node, *current;
 	unsigned int i = 0;
 
-	if (!head || !*head)
+	if (*head == NULL)
 		return (-1);
-	if (!index)
+	if (index == 0)
 	{
-		node = *head;
 		*head = (*head)->next;
 		free(node);
 		return (1);
 	}
+	current = NULL;
 	node = *head;
-	while (node)
+	while (i < index - 1)
 	{
-		if (i == index)
-		{
-			prev_node->next = node->next;
-			free(node);
-			return (1);
-		}
-		i++;
-		prev_node = node;
+		if (!node || !(node->next))
+			return (-1);
+		
 		node = node->next;
+		index++;
 	}
-	return (-1);
+	current = node->next;
+	node->next = current->next;
+	free(current);
+
+	return (1);
 }
